@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 20px;
+}
+.img img{
+    width: 100%;
+    height: 300px;
+}
+.date_time{
+    top: 0;
+    left: 0;
+    width: 50px;
+    position: absolute;
+}
+.date_time .date{
+    background-color: tomato;
+    text-align: center;
+    padding-top: 3px;
+    color: white;
+}
+.date_time .time{
+    background-color: hotpink;
+    text-align: center;
+    padding-top: 3px;
+    color: white;
+}
+.text{
+    border: 1px solid black;
+    height: 50px;
+    margin-top: -2px;
+    padding: 20px;
+font-size: 25px;
+color: blue;
+}
+.icons{
+    display: flex;
+}
+.icons .rating{
+    width: 33.33%;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+}
+.icons .rating:nth-child(1):hover{
+    transition: 0.5s;
+    background-color: green;
+    color: white;
+}
+.icons .rating:nth-child(2):hover{
+    transition: 0.5s;
+    background-color: red;
+    color: white;
+}
+

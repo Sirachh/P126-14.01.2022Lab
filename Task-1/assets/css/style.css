@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../img/hotel.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    width:85%;
+    margin: auto;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+ul li::before{
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    transition: 0.5s;
+    background-color: teal;
+
+}
+ul li:hover::before{
+    width: 100%;
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.content {
+color: white;
+position: absolute;
+top: 50%;
+text-align: center;
+width: 100vw;
+margin: auto;
+}
+.content h1{
+font-size: 70px;
+}
+.content p{
+font-size: 18px;
+width: 600px;
+margin: auto;
+}
+.btn-group{
+    margin-top: 40px;
+}
+.btn{
+    width: 200px;
+    padding: 15px;
+    border-radius: 35px;
+    background: transparent;
+    border: 3px solid teal;
+    color: white;
+    cursor: pointer;
+    margin:0px 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   
+}
+.btn span{
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: teal;
+    height: 100%;
+    border-radius: 35px;
+    transition: 0.5s;
+    z-index: -1;
+
+}
+.btn:hover span{
+    width:100% ;
+}
+.btn:hover{
+    border: none;
+}
